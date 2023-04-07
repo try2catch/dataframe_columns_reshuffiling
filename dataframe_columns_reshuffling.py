@@ -27,7 +27,7 @@ def get_headers(header_list, subset=None):
         pass
 
     if value is None:
-        return 'There is indexing issue with header list. {}'.format(str(header_list))
+        return f'There is indexing issue with header list. {header_list}'
     else:
         if subset is None:
             return headers
@@ -40,7 +40,7 @@ def get_headers(header_list, subset=None):
 
             duplicate = check_duplicate_indexes(index)
             if duplicate:
-                return 'Indexes given for headers are duplicate : ' + str(index)
+                return f'Indexes given for headers are duplicate : {index}'
 
             accessed_mapping = map(headers.__getitem__, index)
             try:
