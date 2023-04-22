@@ -1,6 +1,6 @@
 # Header Checker
 
-This is a Python script that checks if a given list of headers is valid for a CSV file. It checks if the headers match the indexes given in the list of dictionaries. If the indexes are valid, it creates a new CSV file with the specified headers.
+This is a Python script to reorder the headers as per the given order.
 
 ## Prerequisites
 
